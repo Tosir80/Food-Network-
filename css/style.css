@@ -228,7 +228,6 @@ header{
 }
 .contact{
 
-  rgb(228, 126, 9);
   width: 50%;
 
 }
@@ -281,7 +280,7 @@ textarea{
     background: none;
      color: orange;
 }
-
+/* contact us section start */
 /* footer start */
 .footer{
     padding: 30px;
