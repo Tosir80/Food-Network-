@@ -3,7 +3,49 @@
     padding:0;
     box-sizing: border-box;
     text-decoration: none;
+   
 }
+body{
+    font-family: 'Roboto',
+    sans-serif;
+}
+.navbar{
+    background-color: #da8027dc;
+    padding: 5px;
+  box-shadow: 2px 6px 20px rgba(128, 128, 128, 0.514);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     flex-wrap: wrap;
+    
+}
+.logo a{
+    font-size: 30px;
+   
+    font-weight: 600;
+}
+
+.nav ul{
+    display: flex;
+
+}
+.nav ul li {
+     margin:5px 15px;
+    list-style: none;
+    
+}
+
+.nav ul li a{
+    transition: all 0.3s ease 0s;
+}
+.nav ul li a:hover, .nav ul li a.active{
+   color:white;
+   font-weight: 600;
+}
+
+
 
 .container{
     width:1200px;
@@ -14,6 +56,7 @@
 .hero{
     display: flex;
     margin:0 auto;
+     flex-wrap: wrap;
 }
 
 .hero .left-side, .hero .right-side{
@@ -62,7 +105,7 @@
     background: url(../img/Frame\ 57.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
+ flex-wrap: wrap;
 
    
 }
@@ -95,6 +138,7 @@
 .recipie .items{
     display: flex;
     justify-content:space-around;
+     flex-wrap: wrap;
 
 }
 .recipie .items .item{
@@ -102,9 +146,42 @@
     box-shadow: 2px 2px 10px rgba(61, 59, 59, 0.336);
    padding:10px;
    border-radius: 10px;
+   transition: all 0.3s ease 0s;
+       overflow: hidden;
+       cursor: pointer;
+}
+.recipie .items .item h1{
+    padding:10px;
+    position: relative;
+}
+.recipie .items .item h1::after{
+    content: "";
+    display: block;
+    width:0%;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+.recipie .items .item:hover h1::after{
+    width: 40%;
 }
 .recipie .items .item img{
     width:100%;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+.recipie .items .item:hover img {
+     	transform: scale(1.1);
+   
+         
+
+}
+
+.recipie .items .item:hover{
+    background: rgba(22, 36, 39, 0.151);
 }
 .item h1{
     font-size: 25px;
@@ -127,6 +204,7 @@
    border-radius: 12px;
    padding:1rem;
   box-shadow: 2px 2px 10px rgba(61, 59, 59, 0.336);
+  flex-wrap: wrap;
     
 }
 
@@ -136,3 +214,86 @@
 
 
 /*subscribe section end  */
+
+
+/* contact us section start */
+.contact-content{
+    display: flex;
+}
+.contact-left{
+    width: 50%;
+}
+.contact-left img{
+    width: 100%;
+}
+.contact{
+
+  rgb(228, 126, 9);
+  width: 50%;
+
+}
+
+.contact-title{
+    padding:10px;
+   
+}
+
+form input{
+    background: none;
+    outline: none;
+    border-radius: 5px;
+    border:2px solid rgb(228, 126, 9);
+    margin:10px;
+    color:rgb(228, 126, 9);
+    padding:5px;
+    width:300px;
+}
+
+form label{
+    color:rgb(228, 126, 9);
+    font-size: 20px;
+;
+
+}
+
+textarea{
+    background: none;
+    outline: none;
+    border-radius: 5px;
+    border:2px solid rgb(228, 126, 9);
+    margin:10px;
+    color:rgb(228, 126, 9);
+    width: 50%;
+}
+ .contact ::placeholder {
+     color: orange;
+  
+ }
+
+.submit-btn{
+    background: tomato;
+    font-size: 20px;
+    color:white;
+    transition: all 0.3s ease 0s;
+}
+.submit-btn:hover{
+    font-size: 20px;
+    background: none;
+     color: orange;
+}
+
+/* footer start */
+.footer{
+    padding: 30px;
+    text-align: center;
+    background: black;
+    color: white;
+    line-height: 2rem;
+}
+.fcolor{
+    color: rgb(6, 139, 128);
+}
+
+.footer h1{
+    font-size: 25px;
+}
